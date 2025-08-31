@@ -1,11 +1,11 @@
 ## Report
 
 
-### Aim
+### **Aim**
 
 The aim of the project was to create a comprehensive set of benchmarks to evaluate how long various libraries take to execute and to determine whether performance is improving or slowing down over time. The broader goal was to implement a cohesive benchmarking framework that not only measures and records performance but also identifies bottlenecks for improvement. Additionally, we aimed to develop benchmarks that allow comparisons with other quantum software packages.
 
-### Upon Conclusion
+### **Upon Conclusion**
 
 We now have a new repository, [`toqito-bench`](https://github.com/vprusso/toqito-bench), which contains benchmarks for **57 functions across 3 libraries**. A complete methodology has also been developed for the MATLAB-based library **QETLAB**. While it does not yet include the full set of benchmarks, the methodology provides a clear path for future contributions.
 
@@ -15,7 +15,7 @@ There are still several future goals I would like to continue contributing to. W
 
 
 
-### Weekly Blogs
+### **Weekly Blogs**
 0. [Introduction and Community Bonding Period](https://rajdeepaher.github.io/2025/05/27/GSoC-Community-Bonding.html)  
 1. [Week 1](https://rajdeepaher.github.io/2025/06/10/GSoC-Week-1.html)  
 2. [Week 2](https://rajdeepaher.github.io/2025/06/19/GSoC-Week-2.html)  
@@ -30,36 +30,36 @@ There are still several future goals I would like to continue contributing to. W
 11. [Week 11](https://rajdeepaher.github.io/2025/08/19/GSoC-Week-11.html)  
 12. [Week 12](https://rajdeepaher.github.io/2025/08/24/GSoC-Week-12.html)  
 
-### Logs of PR
+### **Logs of PR**
 
 | Pull Request | Description | Date | Status |
 |--------------|-------------|------|--------|
-| https://github.com/vprusso/toqito-bench/pull/9 | Initializing toqito-bench with basic structure and CI stub | 03/06/2025 | Closed and Merged |
-| https://github.com/vprusso/toqito-bench/pull/11| Initialize environments in `python`, `julia` and `MATLAB`| 04/06/2025 | Closed and Merged | 
-| https://github.com/vprusso/toqito-bench/pull/12 | Adding instructions on benchmark ID-ing| 30/06/2025 | Closed and Merged|
-| https://github.com/vprusso/toqito-bench/pull/13 | Adding `Makefile` and benchmark running instructions | 02/07/2025 | Closed and Merged|
-| https://github.com/vprusso/toqito-bench/pull/15 | Adding first set of benchmarks for `ketjl`| 05/07/2025 | Closed and Merged|
-| https://github.com/vprusso/toqito-bench/pull/14 | Adding first set of benchmarks for `toqito` and `QuTIpy`| 09/07/2025 | Closed and Merged|
-| https://github.com/vprusso/toqito-bench/pull/16 | Adding benchmark for `MATLAB`| 12/07/2025 | Closed and Merged|
-| https://github.com/vprusso/toqito-bench/pull/18 | Add `ruff` into the project | 18/07/2025 | Closed and Merged|
-| https://github.com/vprusso/toqito-bench/pull/19 | Add second set of benchmarks for `toqito` and `QuTIpy`| 22/07/2025 | Closed and Merged|
-| https://github.com/vprusso/toqito-bench/pull/20 | Adding second set of benchmarks for `ketjl` | 26/07/2025 | Closed and Merged |
-| https://github.com/vprusso/toqito-bench/pull/21 | Combining benchmark results | 08/08/2025 | Closed and Merged|
-| https://github.com/vprusso/toqito/pull/1304 | optimising `toqito.states.bell`| 13/08/2025 | Closed and Merged |
-| https://github.com/vprusso/toqito/pull/1305 | optimising `toqito.states.basis` | 14/08/2025 | Closed and Merged |
-| https://github.com/vprusso/toqito/pull/1306 | optimising `toqito.states.max_entangled` | 15/08/2025 | Closed and Merged |
-| https://github.com/vprusso/toqito/pull/1307 | optimising `toqito.channels.depolarizing_channel`| 17/08/2025 | Closed and Merged|
-| https://github.com/vprusso/toqito/pull/1309 | optimising `toqito.perms.permute_systems`| 18/08/2025 | Draft|
-| https://github.com/vprusso/toqito/pull/1310 | optimising `toqito.perms.swap`| 20/08/2025| Open |
-| https://github.com/vprusso/toqito/pull/1311 | optimising `toqito.matrix_ops.partial_trace`| 21/08/2025 | Open|
-| https://github.com/vprusso/toqito-bench/pull/22 | Index of all the functions benchmarked | 21/08/2025 |Closed and Merged|
-|https://github.com/vprusso/toqito-bench/pull/23 | Adding a baseline run of all benchmarks to compare against| 23/08/2025| Closed and Merged|
-|https://github.com/vprusso/toqito-bench/pull/24| Created a new branch as `toqito` imports were modified recently| 23/08/2025| Closed and Merged|
-| https://github.com/vprusso/toqito/pull/1312 | regression analysis in `toqito` | 23/08/2025 | Open |
+| [#9](https://github.com/vprusso/toqito-bench/pull/9) | Initializing toqito-bench with basic structure and CI stub | 03/06/2025 | Closed and Merged |
+| [#11](https://github.com/vprusso/toqito-bench/pull/11) | Initialize environments in `python`, `julia` and `MATLAB` | 04/06/2025 | Closed and Merged |
+| [#12](https://github.com/vprusso/toqito-bench/pull/12) | Adding instructions on benchmark ID-ing | 30/06/2025 | Closed and Merged |
+| [#13](https://github.com/vprusso/toqito-bench/pull/13) | Adding `Makefile` and benchmark running instructions | 02/07/2025 | Closed and Merged |
+| [#15](https://github.com/vprusso/toqito-bench/pull/15) | Adding first set of benchmarks for `ketjl` | 05/07/2025 | Closed and Merged |
+| [#14](https://github.com/vprusso/toqito-bench/pull/14) | Adding first set of benchmarks for `toqito` and `QuTIpy` | 09/07/2025 | Closed and Merged |
+| [#16](https://github.com/vprusso/toqito-bench/pull/16) | Adding benchmark for `MATLAB` | 12/07/2025 | Closed and Merged |
+| [#18](https://github.com/vprusso/toqito-bench/pull/18) | Add `ruff` into the project | 18/07/2025 | Closed and Merged |
+| [#19](https://github.com/vprusso/toqito-bench/pull/19) | Add second set of benchmarks for `toqito` and `QuTIpy` | 22/07/2025 | Closed and Merged |
+| [#20](https://github.com/vprusso/toqito-bench/pull/20) | Adding second set of benchmarks for `ketjl` | 26/07/2025 | Closed and Merged |
+| [#21](https://github.com/vprusso/toqito-bench/pull/21) | Combining benchmark results | 08/08/2025 | Closed and Merged |
+| [#1304](https://github.com/vprusso/toqito/pull/1304) | Optimising `toqito.states.bell` | 13/08/2025 | Closed and Merged |
+| [#1305](https://github.com/vprusso/toqito/pull/1305) | Optimising `toqito.states.basis` | 14/08/2025 | Closed and Merged |
+| [#1306](https://github.com/vprusso/toqito/pull/1306) | Optimising `toqito.states.max_entangled` | 15/08/2025 | Closed and Merged |
+| [#1307](https://github.com/vprusso/toqito/pull/1307) | Optimising `toqito.channels.depolarizing_channel` | 17/08/2025 | Closed and Merged |
+| [#1309](https://github.com/vprusso/toqito/pull/1309) | Optimising `toqito.perms.permute_systems` | 18/08/2025 | Draft |
+| [#1310](https://github.com/vprusso/toqito/pull/1310) | Optimising `toqito.perms.swap` | 20/08/2025 | Open |
+| [#1311](https://github.com/vprusso/toqito/pull/1311) | Optimising `toqito.matrix_ops.partial_trace` | 21/08/2025 | Open |
+| [#22](https://github.com/vprusso/toqito-bench/pull/22) | Index of all the functions benchmarked | 21/08/2025 | Closed and Merged |
+| [#23](https://github.com/vprusso/toqito-bench/pull/23) | Adding a baseline run of all benchmarks to compare against | 23/08/2025 | Closed and Merged |
+| [#24](https://github.com/vprusso/toqito-bench/pull/24) | Created a new branch as `toqito` imports were modified recently | 23/08/2025 | Closed and Merged |
+| [#1312](https://github.com/vprusso/toqito/pull/1312) | Regression analysis in `toqito` | 23/08/2025 | Open |
 
 
 
-## Future Goals
+### **Future Goals**
 
 1. We should prioritize writing down optimizations for functions based on how frequently they are imported within the repository.  
    The current status is as follows:
