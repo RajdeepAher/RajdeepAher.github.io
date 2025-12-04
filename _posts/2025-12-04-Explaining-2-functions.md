@@ -1,3 +1,4 @@
+# Summarizing some improvements
 ## Improvements in `toqito.states.max_entangled`
 
 `toqito`'s this module is concerned only with producing a maximally entangled bipartite pure state. The speciality of a maximally entangled state is that when measuring system A determines the state of system B.
@@ -12,9 +13,12 @@ def max_entangled_v1(dim: int, is_sparse: bool = False, is_normalized: bool = Tr
         psi = psi / np.sqrt(dim)
     return psi
 ```
-1. It first creates an $I_{d}$ identity matrix which can be written as $\sum_{i = 0}^{d - 1} |i\rangle \langle i|$
-2. Next, we we reshape $I_{d}$ into a vector of size $d^{2} \times 1$ (in row-major order) which effectively constructs $Sum_{i=0}^{d-1}|i\rangle \otimes |i\rangle$
-3. We finally normalise to construct $\frac{1}{\sqrt{d}}Sum_{i=0}^{d-1}|i\rangle \otimes |i\rangle$
+1. It first creates an $I_{d}$ identity matrix which can be written as $\sum_{i = 0}^{d - 1} \vert i\rangle \langle i \vert$
+
+2. Next, we reshape $I_{d}$ into a vector of size $d^{2} \times 1$ (in row-major order) which effectively constructs $\sum_{i=0}^{d-1} \vert i\rangle \otimes \vert i \rangle$
+
+3. We finally normalize to construct $\frac{1}{\sqrt{d}}\sum_{i=0}^{d-1} \vert i\rangle \otimes \vert i\rangle$
+
 
 
 ### The issues in original`toqito.states.max_entangled`
