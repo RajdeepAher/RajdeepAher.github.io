@@ -12,9 +12,9 @@ def max_entangled_v1(dim: int, is_sparse: bool = False, is_normalized: bool = Tr
         psi = psi / np.sqrt(dim)
     return psi
 ```
-1. It first creates an $I_{d}$ identity matrix which can be written as $\Sum_{i = 0}^{d - 1} |i\rangle \langle i|$
+1. It first creates an $I_{d}$ identity matrix which can be written as $\sum_{i = 0}^{d - 1} |i\rangle \langle i|$
 2. Next, we we reshape $I_{d}$ into a vector of size $d^{2} \times 1$ (in row-major order) which effectively constructs $Sum_{i=0}^{d-1}|i\rangle \otimes |i\rangle$
-3. We finally normalise to construct $\frac{1}{d}Sum_{i=0}^{d-1}|i\rangle \otimes |i\rangle$
+3. We finally normalise to construct $\frac{1}{\sqrt{d}}Sum_{i=0}^{d-1}|i\rangle \otimes |i\rangle$
 
 
 ### The issues in original`toqito.states.max_entangled`
